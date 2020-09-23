@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="posts-main">
     <h2>Posts</h2>
     <div class="post" v-for="post in posts" :key="post.id">
       <h3>
@@ -23,3 +23,13 @@ export default {
   },
 };
 </script>
+<style>
+  .posts-main {
+    padding: 10rem;
+  }
+  
+  .post {
+    border: 1px solid black;
+    padding: 1.5rem;
+  }
+</style>
