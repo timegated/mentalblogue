@@ -35,7 +35,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    "~/plugins/posts.server.js"
+    "~/plugins/posts.server.js",
+    "~/plugins/dateformat.js"
   ],
   generate: {
     routes: dynamicRoutes

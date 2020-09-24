@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <main class="post individual">
     <h1>{{ post.title.rendered }}</h1>
-    <small>{{ post.date }}</small>
+    <small>{{ post.date | dateformat }}</small>
     <section v-html="post.content.rendered"></section>
   </main>
 </template>
@@ -26,3 +26,20 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+main.post {
+  margin: 60px auto 50px;
+  max-width: 960px;
+  padding: 0 30px 70px;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+}
+
+section {
+  color: #444;
+}
+</style>
